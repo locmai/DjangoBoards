@@ -19,5 +19,7 @@ from django.urls import path
 from boards import views as boardviews
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/',boardviews.home,name='home'),
+    path('', boardviews.home, name='home'),
+    path('boards/<int:board_id>/', boardviews.board_topics, name='board_topics'),
+    path('boards/<int:board_id>/new/', boardviews.new_topic, name='new_topic'),
 ]
