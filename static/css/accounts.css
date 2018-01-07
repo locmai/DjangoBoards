@@ -1,0 +1,13 @@
+body {
+  background-image: url(../img/darkness.png);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.logo a {
+  color: rgba(0,0,0,.9);
+}
+
+.logo a:hover,
+.logo a:active {
+  text-decoration: none;
+}
