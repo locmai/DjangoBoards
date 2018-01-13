@@ -26,4 +26,5 @@ urlpatterns = [
     path('boards/<int:board_id>/new/', board_views.new_topic, name='new_topic'),
     path('signup/', account_views.sign_up, name='sign_up'),
     path('logout/',auth_views.LogoutView.as_view(), name='log_out'),
+    path('login/',auth_views.LoginView.as_view(template_name='login.html'), name='log_in'),
 ]
